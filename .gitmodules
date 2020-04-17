@@ -1,0 +1,3 @@
+[submodule "TermuxArch"]
+	path = TermuxArch
+	url = git@github.com:sudomain/TermuxArch.git
