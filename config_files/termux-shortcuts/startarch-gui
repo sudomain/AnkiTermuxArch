@@ -1,0 +1,21 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# This is a helper script that executes another script inside of the TermuxArch proot. This is needed for two reasons:
+# 1. The vnc server will only start if it is run as the root user or if the root user switched to another user using the 'su' command. It will not run if you use 'startarch ul user' to login directly as the non-root user
+# 2. Some gui programs (such as Anki) will not run as the root user.
+# For these reasons, we must do the following:
+# 1. Log into the TermuxArch proot as the root user using the 'startarch c[md] cmd' syntax 
+# 2. Switch to a non-root user using 'su'
+# 3. Start a script as the non-root user using the '--command ' option of the 'su' command.
+
+#TODO the following commands launch a given VNC viewer app. Create a function that will determine which app is installed and launch the appropriate one
+# MultiVNC
+#am start -n com.coboltforge.dontmind.multivnc/.MainMenuActivity
+# VNC Viewer from RealVNC
+#am start -n com.realvnc.viewer.android/.app.ConnectionChooserActivity
+
+# Uncomment the following command if you want to prevent the CPU from sleeping, which may interupt the VNC server while Anki is open
+#termux-wake-lock
+
+bash /data/data/com.termux/files/usr/bin/startarch cmd "su vncuser -c 'bash ~/bin/start-vnc-server'"
+
+read -p 'press enter to close session '
