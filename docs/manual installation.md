@@ -7,7 +7,7 @@ Steps:
 2. install TermuxArch
 `bash setupTermuxArch.bash`
 3. replace the mirrorlist file
-`mv `
+`mv config_files/arch/mirrorlist ~/arch/etc/pacman.d/mirrorlist`
 4. upgrade packages in the proot
 `startarch cmd 'pacman -Syu'`
 

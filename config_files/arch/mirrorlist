@@ -26,7 +26,7 @@ Server = http://mirror.archlinuxarm.org/$arch/$repo
 ## Berlin
 # Server = http://de.mirror.archlinuxarm.org/$arch/$repo
 ## Coburg
-# Server = http://de4.mirror.archlinuxarm.org/$arch/$repo
+Server = http://de4.mirror.archlinuxarm.org/$arch/$repo
 ## Falkenstein
 # Server = http://eu.mirror.archlinuxarm.org/$arch/$repo
 # Server = http://de5.mirror.archlinuxarm.org/$arch/$repo

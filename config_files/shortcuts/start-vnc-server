@@ -1,0 +1,14 @@
+#!/bin/env bash
+
+# ANKI_BASE is where Anki stores things specific to you like your addons (addons21 for Anki 2.1) and your profile directory (the 'User 1' directory). Your profile directory contains your collection (collection.anki) and media (collection.media directory).
+# If you want to save space by having Anki and AnkiDroid use the same collection.anki2 database, then make sure this variable is set to a directory in your device's shared storage (/storage/emulated/0/). Remember to also change the AnkiDroid directory setting (under settings >  "Advanced") so that it is set to your profile directory (e.g. 'User 1') within your chosen ANKI_BASE directory (e.g. /storage/emulated/0/AnkiRootDir/User 1 )
+export ANKI_BASE='/storage/emulated/0/AnkiRootDir/'
+
+export DISPLAY=':1'
+
+# Start the VNC server on display 1 and only allow connections from this device
+vncserver :1 -localhost
+
+#TODO detect which DE is installed
+#startlxde
+startxfce4

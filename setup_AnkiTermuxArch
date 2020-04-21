@@ -1,5 +1,21 @@
 #!/data/data/com.termux/files/usr/bin/bash
-set -eo pipefail
+set -Eeuo pipefail
+
+# Dependencies for TermuxArch
 pkg install bsdtar proot
+
+# Install and configure TermuxArch for Anki
 bash TermuxArch/setupTermuxArch.bash 
 
+# Move/overwrite config files
+# TODO: ~/arch is the default install location, but users might have a different path
+cp config_files/arch/mirrorlist ~/arch/etc/pacman.d/mirrorlist
+
+# upgrade and install packages in the proot
+startarch cmd 'pacman -Syu'
+startarch cmd 'pacman -S xfce4 tigervnc anki'
+
+# Anki wont run as root so we'll create a new user in the proot
+startarch cmd 'addauser vncuser'
+
+# 
