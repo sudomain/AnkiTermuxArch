@@ -9,9 +9,9 @@
 
 #TODO the following commands launch a given VNC viewer app. Create a function that will determine which app is installed and launch the appropriate one
 # MultiVNC
-#am start -n com.coboltforge.dontmind.multivnc/.MainMenuActivity
+am start -n com.coboltforge.dontmind.multivnc/.MainMenuActivity
 # VNC Viewer from RealVNC
-#am start -n com.realvnc.viewer.android/.app.ConnectionChooserActivity
+am start -n com.realvnc.viewer.android/.app.ConnectionChooserActivity
 
 # Uncomment the following command if you want to prevent the CPU from sleeping, which may interupt the VNC server while Anki is open
 #termux-wake-lock
@@ -20,4 +20,5 @@ bash /data/data/com.termux/files/usr/bin/startarch cmd "su vncuser -c 'bash ~/bi
 
 read -p 'press enter to close session '
 
+# run the vnc server cleanup script
 bash ~/.shortcuts/stoparch-gui
