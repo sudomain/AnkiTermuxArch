@@ -1,6 +1,8 @@
 v0.0.1
 This project uses [TermuxArch](https://github.com/SDRausty/TermuxArch) to install an instance of [Arch Linux ARM](https://archlinuxarm.org/) inside a [PRoot environment](https://proot-me.github.io/) inside of [Termux](https://termux.com/). It then installs and configures Anki, a desktop environment (XFCE4), and a VNC Server (tigervnc). [This page](https://archlinuxarm.org/packages/any/anki) shows version of Anki that this project installs.
 
+![demo](demo.png)
+
 Install Requirements:
 1. Android 5+ (Android 5/6 users can use Termux 0.75 from F-Droid after enabling the the F-Droid Archive repo)
 2. 2.3 GB of internal storage space, not including the size of your Anki collection. This project installs and configures a full Linux distro (Arch Linux ARM) with a desktop environment (XFCE4) and VNC server (TigerVNC) so it can run Anki. If you use AnkiDroid and AnkiTermuxArch you will end up with two copies of your collection on your device. It's not yet possible to have the projects share the same copy of an Anki collection.
@@ -14,9 +16,9 @@ Install Instructions:
 1. Install Termux from F-Droid or the Play Store
 2. Plug your device into a charger, connected to WiFi, and turn off mobile data
 3. Copy and paste the following line of code into Termux to get the code for this project
-`git clone --recurse-submodules
+`git clone --recurse-submodules https://github.com/sudomain/AnkiTermuxArch.git; bash ~/AnkiTermuxArch/setup_AnkiTermuxArch.bash`
 4. If you get a prompt that looks like `[rootXX:XXdir]` then you can type `exit` and press enter. Soon this step wont be necessary
-5. Start the GUI by putting a Termux shortcut in your Android home screen or typing `bash ~/.shortcuts/startarch-gui`
+5. Start the `startarch-gui` script by putting a Termux shortcut in your Android home screen or typing `bash ~/.shortcuts/startarch-gui`.
 6. Open your VNC client app and connect with these settings:
 Address: `localhost::5901` i.e. connect to your device (localhost) on port 5901
 Password: ankiarch
