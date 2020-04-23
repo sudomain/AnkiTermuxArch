@@ -19,3 +19,5 @@
 bash /data/data/com.termux/files/usr/bin/startarch cmd "su vncuser -c 'bash ~/bin/start-vnc-server'"
 
 read -p 'press enter to close session '
+
+bash ~/.shortcuts/stoparch-gui

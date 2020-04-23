@@ -1,3 +1,4 @@
+v0.0.1
 This project uses [TermuxArch](https://github.com/SDRausty/TermuxArch) to install an instance of [Arch Linux ARM](https://archlinuxarm.org/) inside a [PRoot environment](https://proot-me.github.io/) inside of [Termux](https://termux.com/). It then installs and configures Anki, a desktop environment (XFCE4), and a VNC Server (tigervnc). [This page](https://archlinuxarm.org/packages/any/anki) shows version of Anki that this project installs.
 
 Install Requirements:
@@ -19,6 +20,7 @@ Install Instructions:
 6. Open your VNC client app and connect with these settings:
 Address: `localhost::5901` i.e. connect to your device (localhost) on port 5901
 Password: ankiarch
+7. Click/tap the applications menu in the top left -> Education -> Anki 
 
 The default password can be changed by running the `vncpasswd` command as the vncuser. It doesn't really matter because the VNC server is configured to only allow connections from localhost (the same device it's running on)
 
