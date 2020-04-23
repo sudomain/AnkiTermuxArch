@@ -15,11 +15,15 @@ Install Requirements:
 Install Instructions:
 1. Install Termux from F-Droid or the Play Store
 2. Plug your device into a charger, connected to WiFi, and turn off mobile data
-3. Copy and paste the following line of code into Termux to get the code for this project
+3. Copy and paste the following line of code into Termux to begin installing
+
 
 `git clone --recurse-submodules https://github.com/sudomain/AnkiTermuxArch.git; bash ~/AnkiTermuxArch/setup_AnkiTermuxArch.bash`
 
-4. If you get a prompt that looks like `[rootXX:XXdir]` then you can type `exit` and press enter. Soon this step wont be necessary
+
+By default TermuxArch will attempt to download Arch Linux ARM from a server that is geographically near you, but sometimes it will have trouble doing so. If this happens, try the above command again. Manually enabling a nearby mirror is possible (see `TermuxArch/setupTermuxArch.bash help`).
+
+4. If you get a prompt that looks like `[rootXX:XXdir]` then you can type `exit` and press enter. The install will then resume. This wont happen in a future version. 
 5. Start the `startarch-gui` script by putting a Termux shortcut in your Android home screen or typing `bash ~/.shortcuts/startarch-gui`.
 6. Open your VNC client app and connect with these settings:
 Address: `localhost::5901` i.e. connect to your device (localhost) on port 5901
