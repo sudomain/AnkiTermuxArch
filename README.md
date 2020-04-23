@@ -16,7 +16,9 @@ Install Instructions:
 1. Install Termux from F-Droid or the Play Store
 2. Plug your device into a charger, connected to WiFi, and turn off mobile data
 3. Copy and paste the following line of code into Termux to get the code for this project
+
 `git clone --recurse-submodules https://github.com/sudomain/AnkiTermuxArch.git; bash ~/AnkiTermuxArch/setup_AnkiTermuxArch.bash`
+
 4. If you get a prompt that looks like `[rootXX:XXdir]` then you can type `exit` and press enter. Soon this step wont be necessary
 5. Start the `startarch-gui` script by putting a Termux shortcut in your Android home screen or typing `bash ~/.shortcuts/startarch-gui`.
 6. Open your VNC client app and connect with these settings:

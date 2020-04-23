@@ -4,6 +4,8 @@ set -uo pipefail
 # Dependencies for TermuxArch
 pkg install bsdtar proot
 
+cd ~/AnkiTermuxArch/
+
 # Install and configure TermuxArch for Anki
 bash TermuxArch/setupTermuxArch.bash 
 
