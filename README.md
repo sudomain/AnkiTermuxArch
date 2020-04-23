@@ -1,10 +1,10 @@
-This project uses [TermuxArch](https://github.com/SDRausty/TermuxArch) to install an instance of [Arch Linux ARM](https://archlinuxarm.org/) inside a [PRoot environment](https://proot-me.github.io/) inside of [Termux](https://termux.com/). It then installs and configures Anki, a desktop environment (XFCE4), and a VNC Server (tigervnc). [This page](https://archlinuxarm.org/packages/any/anki) shows version of Anki that this project installs.
+This project uses [TermuxArch](https://github.com/SDRausty/TermuxArch) to install an instance of [Arch Linux ARM](https://archlinuxarm.org/) inside a [PRoot environment](https://proot-me.github.io/) inside of [Termux](https://termux.com/). It then installs and configures Anki, a desktop environment (XFCE4), and a VNC Server (tigervnc). [This page](https://archlinuxarm.org/packages/any/anki) shows version of Anki that this project installs. If you already use TermuxArch, see [docs/manual\ installation.md](docs/manual\ installation.md) because this project overwrites config files in the proot (namely /etc/pacman.d/mirrorlist).
 
 ![demo](demo.png)
 
 Install Requirements:
 1. Android 5+ (Android 5/6 users can use Termux 0.75 from F-Droid after enabling the the F-Droid Archive repo)
-2. 2.3 GB of internal storage space, not including the size of your Anki collection. This project installs and configures a full Linux distro (Arch Linux ARM) with a desktop environment (XFCE4) and VNC server (TigerVNC) so it can run Anki. If you use AnkiDroid and AnkiTermuxArch you will end up with two copies of your collection on your device. It's not yet possible to have the projects share the same copy of an Anki collection.
+2. 2.3 GB of internal storage space, not including the size of your Anki collection. This project installs and configures a full Linux distro (Arch Linux ARM) with a desktop environment (XFCE4) and VNC server (TigerVNC) so that it can run Anki. If you use AnkiDroid and AnkiTermuxArch you will end up with two copies of your collection on your device. It's not yet possible to have the projects share the same copy of an Anki collection.
 3. Time. Depending on your device and internet connection, the install may take a few minutes to an hour.
 4. Apps:
     * An VNC client app for connecting to a VNC server. This is an important choice because this is the main app you'll use to interact with Anki's GUI. Open-source options include MultiVNC and androidVNC (both available on F-Droid) but I've found VNC Viewer from the Play Store most usable.
