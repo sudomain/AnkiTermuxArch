@@ -4,7 +4,7 @@ This project uses [TermuxArch](https://github.com/SDRausty/TermuxArch) to instal
 
 Install Requirements:
 1. Android 5+ (Android 5/6 users can use Termux 0.75 from F-Droid after enabling the the F-Droid Archive repo)
-2. 2.3 GB of internal storage space, not including the size of your Anki collection. This project installs and configures a full Linux distro (Arch Linux ARM) with a desktop environment (LXDE) and VNC server (TigerVNC) so that it can run Anki. If you use AnkiDroid and AnkiTermuxArch you will end up with two copies of your collection on your device. It's not yet possible to have the projects share the same copy of an Anki collection.
+2. 2.3 GB of internal storage space, not including the size of your Anki collection. This project installs and configures a full Linux distro with a desktop environment and VNC server so that it can run Anki. If you use AnkiDroid and AnkiTermuxArch you will end up with two copies of your collection on your device. It's not yet possible to have the projects share the same copy of an Anki collection.
 3. Time. Depending on your device and internet connection, the install may take a few minutes to an hour.
 4. Apps:
     * An VNC client app for connecting to a VNC server. This is an important choice because this is the main app you'll use to interact with Anki's GUI. Open-source options include MultiVNC and androidVNC (both available on F-Droid) but I've found VNC Viewer from the Play Store most usable.
@@ -35,7 +35,7 @@ The `startarch-gui` script will automatically open your VNC client app if you ha
 
 7. Click/tap the applications menu in the top left -> Education -> Anki 
 
-The default password can be changed by running the `vncpasswd` command as the vncuser. It doesn't really matter because the VNC server is configured to only allow connections from localhost (the same device it's running on)
+The default password can be changed by running the `vncpasswd` command as the vncuser. It doesn't really matter because the VNC server is configured to only allow connections from localhost (the same device it's running on).
 
 Uninstall Instructions:
 Uninstalling Termux will remove all files associated with this project. If you want to keep Termux because you use it for other things, run this command to remove everything associated with the Arch install:
