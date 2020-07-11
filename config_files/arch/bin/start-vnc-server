@@ -11,4 +11,4 @@ export DISPLAY=':1'
 # Even though connections are only allowed from localhost, you could setup secure remote connections via `ssh -L arbitraryPort:localhost:5901 -p 8022 IPofYourRemoteTermuxDevice`. Remember to use key-based auth and disable password auth.
 vncserver :1 -localhost
 
-startlxde
+startxfce4

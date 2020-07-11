@@ -15,7 +15,7 @@ cp config_files/arch/mirrorlist ~/arch/etc/pacman.d/mirrorlist
 
 # upgrade and install packages in the proot
 startarch cmd 'pacman -Syu --noconfirm'
-startarch cmd 'pacman -S --noconfirm lxde tigervnc anki'
+startarch cmd 'pacman -S --noconfirm xfce4 tigervnc anki'
 
 # Anki wont run as root so we'll create a new user in the proot
 startarch cmd 'useradd --create-home vncuser'
