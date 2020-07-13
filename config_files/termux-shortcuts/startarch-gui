@@ -9,7 +9,7 @@
 
 #TODO the following commands launch a given VNC viewer app. Create a function that will determine which app is installed and launch the appropriate one
 # MultiVNC
-am start -n com.coboltforge.dontmind.multivnc/.MainMenuActivity
+# am start -n com.coboltforge.dontmind.multivnc/.MainMenuActivity
 # VNC Viewer from RealVNC
 am start -n com.realvnc.viewer.android/.app.ConnectionChooserActivity
 
