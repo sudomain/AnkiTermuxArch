@@ -14,4 +14,3 @@ export DISPLAY=':1'
 vncserver :1 -localhost
 
 startxfce4
-anki
